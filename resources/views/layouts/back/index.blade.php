@@ -24,7 +24,7 @@
   <!-- navbar -->
   @include('layouts.back.navbar')
 
-  @yield('content')
+
 
   <div class="row no-gutters mt-5">
     <div class="col-md-2 bg-dark mt-2 pr-3 pt-4">
@@ -33,7 +33,7 @@
           <a class="nav-link active text-white" href="dashboard.html"><i class="fa-solid fa-gauge mr-2" style="color: #fff;"></i></i> Dashboard</a><hr class="bg-secondary">
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="mahasiswa.html"><i class="fa-solid fa-user mr-2"></i> Daftar Maba</a><hr class="bg-secondary">
+          <a class="nav-link text-white" href="mahasiswa.html"><i class="fa-solid fa-user mr-2"></i> Daftar Produk</a><hr class="bg-secondary">
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="dosen.html"><i class="fa-solid fa-user mr-2"></i> Daftar Dosen</a><hr class="bg-secondary">
@@ -46,8 +46,9 @@
         </li>
       </ul>
     </div>
+
     <div class="col-md-10 p-5 pt-2">
-      <h3><i class="fa-solid fa-house"></i> Dashboard</h3><hr>
+        @yield('content')
 
 
 
@@ -55,7 +56,7 @@
     </div>
   </div>
   <!-- end navbar -->
-  
+
 
   <!-- Optional JavaScript; choose one of the two! -->
 
